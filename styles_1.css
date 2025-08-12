@@ -96,7 +96,7 @@ a {
 
 .carousel-track {
   display: flex;
-  animation: slide 65s linear infinite;
+  animation: slide 6s linear infinite;
   width: calc(100vw * 6);
 }
 
