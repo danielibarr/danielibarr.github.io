@@ -1,0 +1,301 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+    --therme-color-blue: #98DBF8;
+    --therme-color-navy: #304156;
+}
+
+body {
+  background-color: var(--therme-color-navy);
+  font-family: "Nata Sans", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: aliceblue;
+  text-align: left;
+}
+
+h1 {
+  font-family:"Oswald", sans-serif;
+  padding-left: 10px;
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border-bottom: 2px solid aliceblue;
+  gap: 1rem;
+  z-index: 1;
+  padding: 1rem 2rem;
+}
+
+.logo h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: aliceblue;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  font-weight: 200;
+  background-color: var(--therme-color-navy);
+  padding: 1rem 3rem;
+  z-index: 0; 
+  font-size: 10pt;
+  margin-bottom: 20px;
+}
+
+.nav a:hover {
+  color: var(--therme-color-blue);
+}
+
+.logo-top-right {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.logo-top-right img {
+  width: 40px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.logo-top-right:hover img {
+  transform: scale(1.5);
+}
+
+.carousel {
+  overflow: hidden;
+  width: 1200px;
+  height: 750px;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.carousel-track {
+  display: flex;
+  animation: slide 65s linear infinite;
+  width: calc(100vw * 6);
+}
+
+.carousel img {
+  width: auto;
+  height: 750px;
+  object-fit: cover;
+}
+
+.project_info {
+   column-count: 2;
+  column-gap: 40px; /* espacio entre columnas */
+  padding: 20px;
+  /* Opcional: para mejorar la lectura */
+  line-height: 1.6;
+}
+
+.project_info h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: aliceblue;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+
+
+/* -------CONTACT ME------- */
+
+#container {
+  color: #ffffff;
+  font-size: 20pt;
+  padding: 40px; 
+  display: flex;
+  flex-direction: column; 
+  /* align-items: center; */
+}
+
+/* Footer */
+footer {
+  background-color: var(--therme-color-navy);
+  color: aliceblue;
+  text-align: right;
+  padding: 1rem;
+  margin-top: 90px;
+  font-size: 15px;
+}
+
+/* Center Footer */
+.center-footer {
+   background-color: var(--therme-color-navy);
+  color: aliceblue;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 90px;
+  font-size: 15px;
+}
+
+/* Slide animation */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100vw * 6));
+  }
+}
+
+/* Responsive for iPhone 14 Pro Max (max-width: 500px) */
+@media (max-width: 500px) {
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .logo h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+   .nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .logo-top-right {
+    position: static;
+    margin: auto auto 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  body {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .carousel {
+    width: 100%;
+    height: 350px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .carousel img {
+    height: 350px;
+  }
+
+  .project_info h1 {
+    font-size: 1.4rem;
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+
+  .project_info {
+    column-count: 1;
+    column-gap: 0;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .nakita_h1 {
+    font-size: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+
+  footer {
+    text-align: right;
+    font-size: 0.9rem;
+    margin-top: 40px;
+  }
+}
+
+/* Responsive for tablet (iPad Air ~ 768px) */
+@media (min-width: 501px) and (max-width: 1024px) {
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .logo h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .logo {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .logo-top-right {
+    position: static;
+    margin: auto auto 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  body {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .carousel {
+    width: 100%;
+    height: 350px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .carousel img {
+    height: 350px;
+  }
+
+  .project_info h1 {
+    font-size: 1.2rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  footer {
+    text-align: right;
+    font-size: 0.9rem;
+    margin-top: 40px;
+  }
+}
