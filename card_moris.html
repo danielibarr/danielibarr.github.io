@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet" />
     
+    <!-- Splide CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="styles_1.css" />
 </head>
 
@@ -35,24 +39,45 @@
             </figure>
         </header>
 
-        <section class="carousel">
-            <div class="carousel-track">
-                <img src="img/Moris/Moris_1.jpg" alt="Imagen 1" />
-                <img src="img/Moris/Moris_6.jpg" alt="Imagen 6" />
-                <img src="img/Moris/Moris_7.jpg" alt="Imagen 7" />
-                <img src="img/Moris/Moris_5.jpg" alt="Imagen 5" />
-                <img src="img/Moris/Moris_2.jpg" alt="Imagen 2" />
-                <img src="img/Moris/Moris_4.jpg" alt="Imagen 4" />
-                <img src="img/Moris/Moris_1.jpg" alt="Imagen 1" />
-                <img src="img/Moris/Moris_6.jpg" alt="Imagen 6" />
-                <img src="img/Moris/Moris_7.jpg" alt="Imagen 7" />
-                <img src="img/Moris/Moris_5.jpg" alt="Imagen 5" />
-                <img src="img/Moris/Moris_2.jpg" alt="Imagen 2" />
-                <img src="img/Moris/Moris_4.jpg" alt="Imagen 4" />
-                <img src="img/Moris/Moris_1.jpg" alt="Imagen 1" />
-                <img src="img/Moris/Moris_6.jpg" alt="Imagen 6" />
-                <img src="img/Moris/Moris_7.jpg" alt="Imagen 7" />
+        <section class="splide carousel" aria-label="Image Carousel">
+
+            <div class="splide__track">
+
+                <ul class="splide__list">
+
+                    <li class="splide__slide">
+                        <img src="img/Moris/Moris_6.jpg" alt="Imagen 1" />
+                    </li>
+
+                    <li class="splide__slide">
+                        <img src="img/Moris/Moris_4.jpg" alt="Imagen 2" />
+                    </li>
+
+                    <li class="splide__slide">
+                        <img src="img/Moris/Moris_1.jpg" alt="Imagen 3" />
+                    </li>
+
+                    <li class="splide__slide">
+                        <img src="img/Moris/Moris_2.jpg" alt="Imagen 4" />
+                    </li>
+
+                    <li class="splide__slide">
+                        <img src="img/Moris/Moris_7.jpg" alt="Imagen 5" />
+                    </li>
+
+                    <li class="splide__slide">
+                        <img src="img/Moris/Moris_8.png" alt="Imagen 6" />
+                    </li>
+
+                </ul>
+
             </div>
+
+            <!-- Progress bar -->
+            <div class="slider-progress">
+                <div class="slider-progress-bar"></div>
+            </div>
+
         </section>
         
         <h1>MORIS | Pasta Box (Packaging)</h1>
@@ -75,5 +100,10 @@
         </footer>
 
     </main>
+
+    <!-- Splide.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="script.js"></script>
+    
 </body>
 </html>

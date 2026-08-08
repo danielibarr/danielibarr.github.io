@@ -71,6 +71,7 @@ a {
 
 .nav a:hover {
   color: var(--therme-color-blue);
+  
 }
 
 .logo-top-right {
@@ -90,24 +91,18 @@ a {
 }
 
 .carousel {
-  overflow: hidden;
   width: 100%;
-  height: 750px;
+  height: 900px;
   position: relative;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.carousel-track {
-  display: flex;
-  animation: slide 80s linear infinite;
-  width: calc(100vw * 6);
-}
-
 .carousel img {
-  width: auto;
+  width: 100%;
   height: 750px;
   object-fit: cover;
+  object-position: center;
 }
 
 .project_info {
@@ -160,14 +155,15 @@ footer {
   font-size: 15px;
 }
 
-/* Slide animation */
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-100vw * 6));
-  }
+.slider-progress {
+    background: #ccc;
+}
+
+.slider-progress-bar {
+    background: #02f3f3;
+    height: 2px;
+    transition: width 400ms ease;
+    width: 0;
 }
 
 /* Responsive for iPhone 14 Pro Max (max-width: 500px) */
@@ -282,13 +278,13 @@ footer {
 
   .carousel {
     width: 100%;
-    height: 350px;
+    height: 600px;
     margin-top: 15px;
     margin-bottom: 15px;
   }
 
   .carousel img {
-    height: 350px;
+    height: 600px;
   }
 
   .project_info h1 {
