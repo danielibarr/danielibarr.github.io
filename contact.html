@@ -35,7 +35,7 @@
             </figure>
         </header>
 
-        <main id="container">
+        <!-- <main id="container">
             <section id="contact-info">
                 <p><a href="https://www.behance.net/ddanielibarr" target="_blank">www.behance.net/ddanielibarr</a></p>
                 <p><a href="mailto:ddanielibarr@gmail.com">ddanielibarr@gmail.com</a></p>
@@ -45,11 +45,60 @@
                 
             </section>
 
+        </main> -->
+
+        <main id="container">
+
+            <section class="contact-card">
+
+                <h2>Contact Me</h2>
+
+                <p>Have a project in mind? Send me a message and I'll get back to you.</p>
+
+                <form action="https://formspree.io/f/mgaworpj" method="POST">
+
+                    <label for="name">Name</label>
+                    <input 
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                    />
+
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    />
+
+                    <label for="phone">Phone</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                    />
+
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        maxlength="500"
+                        required
+                    ></textarea>
+
+                    <button type="submit">Send Message</button>
+
+                </form>
+
+            </section>
+
         </main>
-        
        
 
-    </main>
+    </main>      
 
     <!-- <footer class="center-footer">
         &copy; 2026 Daniel Ibarra

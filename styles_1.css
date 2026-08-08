@@ -135,6 +135,68 @@ a {
   /* align-items: center; */
 }
 
+/* ------- CONTACT CARD ------- */
+
+.contact-card {
+  width: 100%;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  border: 2px solid aliceblue;
+  border-radius: 10px;
+  background-color: var(--therme-color-navy);
+}
+
+.contact-card h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.contact-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-card label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.contact-card input,
+.contact-card textarea {
+  font-family: "Nata Sans", sans-serif;
+  font-size: 1rem;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid aliceblue;
+  border-radius: 5px;
+}
+
+.contact-card textarea {
+  resize: vertical;
+}
+
+.contact-card button {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: aliceblue;
+  color: var(--therme-color-navy);
+}
+
+.contact-card button:hover {
+  background-color: var(--therme-color-blue);
+}
+
 /* Footer */
 footer {
   background-color: var(--therme-color-navy);
@@ -300,5 +362,24 @@ footer {
     text-align: right;
     font-size: 0.9rem;
     margin-top: 40px;
+  }
+
+  .contact-card {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  .contact-card h2 {
+    font-size: 2rem;
+  }
+
+  .contact-card p {
+    font-size: 0.9rem;
+  }
+
+  .contact-card input,
+  .contact-card textarea {
+    font-size: 1rem;
   }
 }
