@@ -30,10 +30,14 @@ a {
 }
 
 .header {
+  background-color: var(--therme-color-navy);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
   border-bottom: 2px solid aliceblue;
   gap: 1rem;
   z-index: 1;
